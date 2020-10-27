@@ -14,8 +14,8 @@ $('.next').click( function() {
         $(".img-box img").removeClass("active");
         $(immagineCorrente).next().addClass("active");
     } else {
-        $(".img-box img").removeClass("active");
-        $( ).next().addClass("active");
+        $("img:first-child").addClass("active");
+        
     }
 
 
