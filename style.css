@@ -7,7 +7,7 @@
 .container {
     width: 80%;
     margin: auto;
-    background: red;
+    background: grey;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -31,12 +31,12 @@
     align-items: center;
     width: 50px;
     height: 100% ;
-    background: yellow;
+    /* background: yellow; */
 }
 .img-box {
     width: calc(100% - 100px) ;
     height: 100%;
-    background: green;
+    /* background: green; */
     float: left;
 
 }
@@ -54,7 +54,7 @@
     align-items: center;
     width: 50px; ;
     height: 100% ;
-    background: yellow;
+    /* background: yellow; */
 }
 img.active {
     display: block;

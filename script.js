@@ -8,11 +8,19 @@ $(document).ready(function() {
 $('.next').click( function() {
     // ho la necessita di immagazzinare l'immagine attualmente mostrata per poter tenere conto dell'elemento da riprodurre in seguito
     var immagineCorrente = $("img.active") ;
-    $(".img-box img").removeClass("active");
-    $(immagineCorrente).next().addClass("active");
 
-    
-    console.log(immagineCorrente);
+    // Questo if é necessario per stabilire se l'elemento riprodotto ;e l'ultimo della lista
+    if (immagineCorrente.length) {
+        $(".img-box img").removeClass("active");
+        $(immagineCorrente).next().addClass("active");
+    } else {
+        $(".img-box img").removeClass("active");
+        $( ).next().addClass("active");
+    }
+
+
+
+    console.log(immagineCorrente.length);
 
 
 
