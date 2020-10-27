@@ -13,6 +13,9 @@
     display: flex;
     height: 100vh;
 }
+
+ /* Sezione Carousel*/
+
 .carousel {
 
     width: 400px;
@@ -22,12 +25,37 @@
 
 }
 .previous {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
     height: 100% ;
     background: yellow;
 }
+.img-box {
+    width: calc(100% - 100px) ;
+    height: 100%;
+    background: green;
+    float: left;
+
+}
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+
+}
 .next {
+    float: left ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50px; ;
     height: 100% ;
     background: yellow;
+}
+img.active {
+    display: block;
 }
